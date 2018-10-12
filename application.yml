@@ -1,0 +1,18 @@
+
+spring:
+  application:
+    name: movie-server
+
+  cloud:
+    config:
+      uri: https://localhost:8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9090/eureka/
+  register-with-eureka: true
+  fetchRegistry: true
+
+server:
+  port: 9090
